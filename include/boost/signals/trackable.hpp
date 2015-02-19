@@ -160,6 +160,8 @@ namespace BOOST_SIGNALS_NAMESPACE {
       add_if_trackable(R (*)(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)) const { }
 
       std::vector<const trackable*>& bound_objects;
+    private:
+      bound_objects_visitor& operator=(const bound_objects_visitor&);
     };
   } // end namespace detail
 } // end namespace BOOST_SIGNALS_NAMESPACE
