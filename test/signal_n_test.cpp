@@ -30,7 +30,7 @@ struct max_or_default {
 };
 
 struct make_int {
-  make_int(int n, int cn) : N(n), CN(n) {}
+  make_int(int n, int cn) : N(n), CN(cn) {}
   int operator()() { return N; }
   int operator()() const { return CN; }
 
