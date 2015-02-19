@@ -14,7 +14,7 @@ struct HelloWorld
 };
 
 
-int main ( int argc, char *argv [] ) {
+int main ( int, char *[] ) {
 	boost::signal<void ()> sig;
 	boost::signals::scoped_connection c1, c2;
 
